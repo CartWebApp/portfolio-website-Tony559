@@ -1,0 +1,68 @@
+ body { 
+    height: fit-content;
+ }
+ header { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 95dvh;
+ }
+ #headerImageCont { 
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    width: 25%;
+ }
+ header article { 
+    width: 30%; 
+ }
+ header article h1 {
+    font-size: 2rem;
+ }
+ header article p { 
+    font-size: 1.5rem;
+ }
+ #bottomBit { 
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    background-color: blue;
+    width: 100dvw;
+ }
+#fadeCodeHolder { 
+    width: 50%;
+    height: 100dvh;
+    display: flex;
+    background-color: green;
+
+}
+#mainSecRight { 
+    height: fit-content;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column;
+}
+#mainSecRight article { 
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#mainSecRight div ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: .5rem;
+    list-style-type: none;
+}
+
+.liHTML , .liCSS, .liJS, .liTrello, .liLucidChart, .liPS, .liFigma { 
+    padding: .25rem .75rem;
+    border-radius: 100px;
+}
