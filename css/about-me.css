@@ -2,6 +2,11 @@ body {
     display: flex;
     flex-direction: column;
     height: fit-content;
+    overflow-y: hidden;
+}
+html { 
+    overflow-y: scroll;
+    height: fit-content;
 }
 header { 
     height: 90dvh;
@@ -10,6 +15,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    overflow-y: hidden;
 }
 header article:first-of-type { 
     width: 30%;
@@ -82,7 +88,7 @@ header div {
     width: 60%;
     height: 10%;
 }
-#abtMeBotSecSec2 article { 
+#abtMeBotSec2 article { 
     width: 30%;
     height: fit-content;
     display: flex;
@@ -97,4 +103,87 @@ header div {
     background-color: rgb(43, 43, 79);
     width: 60%;
     height: 10%;
+}
+.abtMeCircleImgs { 
+    aspect-ratio: 1/1;
+    width: 30%;
+    border-radius:100%;
+}
+#upLine, #downLine { 
+    width: 10%;
+    aspect-ratio: 1/2;
+    background-color: green;
+}
+h3 { 
+    font-size: 2rem;
+}
+article p {
+    font-size: 1.5rem;
+}
+
+#abtMeMidSec, #abtMeTopSec, #abtMeBotSec {
+    display: flex;
+    flex-direction: column;
+    height: 50dvh; 
+    width: 50dvw;
+    justify-content: center;
+}
+#abtMeTopSec2,#abtMeBotSec2,#abtMeMidSec2 {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100dvw;
+    justify-content: space-between ;
+}
+#abtMeTopSec { 
+    flex-wrap: wrap;
+    align-self: flex-start;
+    align-content: flex-end;
+}
+#abtMeBotSec { 
+    flex-wrap: wrap;
+    align-self: flex-start;
+    align-content: flex-end;
+}
+#abtMeMidSec2 { 
+    flex-direction: row-reverse;
+}
+#abtMeMidSec {
+    flex-wrap: wrap;
+    align-self: flex-start;
+    align-content:space-between;
+
+}
+#abtMeMidSec img {
+    align-self: flex-end; 
+    background-color: green;
+}
+#abtMeTopSec img {
+    align-self: flex-start; 
+    background-color: green;
+}
+#abtMeBotSec img {
+    align-self: flex-start; 
+    background-color: green;
+}
+#tripleImg img { 
+    aspect-ratio: 1/1;
+    width: 15%;
+}
+#tripleImg {
+    margin-top: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+#elSillyHolder { 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }

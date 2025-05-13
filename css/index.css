@@ -7,7 +7,16 @@ body {
    position: relative;
    z-index: 0;
 }
-
+body { 
+   display: flex;
+   flex-direction: column;
+   height: fit-content;
+   overflow-y: hidden;
+}
+html { 
+   overflow-y: scroll;
+   height: fit-content;
+}
 
 
 
@@ -287,6 +296,7 @@ header article p {
    0% {transform: translateX(-300px)}
    100% { transform: translateX(0)}
 }
+
 #headerImageCont img { 
    width: 98%;
    opacity: 0;
@@ -294,7 +304,8 @@ header article p {
 
 }
 .colorPillar {
-
+   opacity: 0;
+   transition: 500ms opacity;
    background: linear-gradient(transparent, rgb(0, 213, 255), transparent);
    width: 1px;
    height: 70dvh;

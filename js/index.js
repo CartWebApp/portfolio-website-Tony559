@@ -14,4 +14,5 @@ document.getElementById("cards").onmousemove = e => {
 setTimeout(() => {
     document.getElementById(`headerImageCont`).classList.add(`arrive`);
     document.getElementById(`theSilly`).classList.add(`arrive`);
+    document.querySelector(`.colorPillar`).classList.add(`arrive`);
 }, 600)
