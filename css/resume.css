@@ -1,16 +1,17 @@
-#skibidy { 
-   width: 100%;
+#skibidy {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
+
 main {
     margin-top: 5rem;
     width: 40dvw;
-    aspect-ratio: 3/2; 
+    aspect-ratio: 3/2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background: rgba(27,27,27,.4);
+    background: rgba(27, 27, 27, .4);
     padding: 1rem;
     border-radius: 10px;
 }
@@ -19,20 +20,24 @@ h1 {
     font-size: 2.5rem;
 }
 
-.topResume { 
+.topResume {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
+
 .topResume img {
     width: 10%;
-    padding-right: 5rem;
+    padding-right: 4rem;
+    margin-left: 2rem;
 }
+
 #left-column {
     width: 50%;
 }
+
 #right-column {
     width: 50%;
 }

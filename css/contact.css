@@ -7,41 +7,50 @@ main {
     width: fit-content;
     height: 100dvh;
 }
-main div { 
+
+main div {
     width: 60%;
 }
-main div article { 
+
+main div article {
     width: 100%;
 }
-h1 { 
+
+h1 {
     width: fit-content;
     font-size: 2rem;
 }
+
 main div article {
     padding: 0;
     margin: 0;
 }
-article, 
-main div article > div { 
+
+article,
+main div article>div {
     width: fit-content;
 }
-main div article div > p { 
+
+main div article div>p {
     width: fit-content;
     font-size: 1.5rem;
     flex-wrap: wrap;
 }
-main div article div:nth-of-type(2) { 
-    width: 50%; 
+
+main div article div:nth-of-type(2) {
+    width: 50%;
     height: fit-content;
 }
-.aiconCont { 
+
+.aiconCont {
     width: fit-content;
     display: flex;
     gap: 2rem;
     padding: 0;
     margin: 0;
 }
-.aiconCont li { 
+
+.aiconCont li {
     width: 100px;
     height: 100px;
     font-size: 2rem;
@@ -50,6 +59,7 @@ main div article div:nth-of-type(2) {
     margin: 0;
     text-decoration: none;
 }
+
 /* main section {
     width: 50%;
 }
@@ -68,24 +78,27 @@ section form textarea {
     color: black;
 } */
 
-form { 
+form {
     display: flex;
     flex-direction: column;
     width: 24rem;
     gap: 1rem;
 }
+
 input,
 select,
-textarea { 
+textarea {
     padding: 1.4rem;
     background-color: rgba(255, 255, 255, 0.1);
-    border: rgb(23,23,23, .5);
+    border: rgb(23, 23, 23, .5);
     border-radius: 10px;
 }
+
 textarea {
     height: 6rem;
 }
-button { 
+
+button {
     width: 8rem;
     padding: 1.4rem;
     cursor: pointer;
@@ -93,10 +106,14 @@ button {
     color: white;
     border-radius: 10px;
 }
-input:focus,select:focus,textarea:focus { 
+
+input:focus,
+select:focus,
+textarea:focus {
     border: none;
     outline: none;
 }
+
 option:not(:first-of-type) {
-  color: black;
+    color: black;
 }

@@ -1,65 +1,57 @@
-body { 
-    height: fit-content;
-    width: 100dvw;
+body {
+  height: fit-content;
+  width: 100dvw;
 
 }
+
 header {
   width: 100%;
   justify-content: center;
   align-items: center;
   align-content: center;
 }
-h1 { 
+
+h1 {
   text-align: center;
 }
 
 #image-track {
+  margin-left: 10rem;
   margin-top: 50dvh;
-    display: flex;
-    gap: 4vmin;
-    user-select: none; /* -- Prevent image highlighting -- */
-    transform: translateX(-500%);
-  }
-  
-  #image-track > .image {
-    width: 40vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: 100% center;
-  }
-  
+  display: flex;
+  gap: 4vmin;
+  user-select: none;
+  /* -- Prevent image highlighting -- */
+  transform: translate(0%, -50%);
+}
+
+#image-track>.image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
 
 
-  .cropped {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    transform: rotate(45deg);
 
-  }
- 
-  footer { 
-    position: absolute;
-    bottom: 0%;
-  }
-  #portSeparator {
-    width: 100dvw;
-    height: 50dvh;
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    align-content : center;
+.cropped {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transform: rotate(45deg);
 
-  }
-  #ada {
-    z-index: 1000;
-    color: white;
-  }
-  #theSillyTriple { 
-    width: fit-content;
-    height:fit-content;
+}
 
-  }
-  
+
+#portSeparator {
+  width: 100dvw;
+  height: 50dvh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+
+}
+

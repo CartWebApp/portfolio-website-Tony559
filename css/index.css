@@ -7,13 +7,15 @@ body {
    position: relative;
    z-index: 0;
 }
-body { 
+
+body {
    display: flex;
    flex-direction: column;
    height: fit-content;
    overflow-y: hidden;
 }
-html { 
+
+html {
    overflow-y: scroll;
    height: fit-content;
 }
@@ -71,7 +73,7 @@ header article p {
 #fadeCodeHolder {
    position: relative;
    width: 50%;
-   height: 100dvh;
+   height: 200dvh;
    display: flex;
    /* background-color: green; */
 
@@ -283,7 +285,8 @@ header article p {
    position: absolute;
    z-index: 2;
 }
-#headerImageCont { 
+
+#headerImageCont {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -293,16 +296,22 @@ header article p {
 }
 
 @keyframes silly {
-   0% {transform: translateX(-300px)}
-   100% { transform: translateX(0)}
+   0% {
+      transform: translateX(-300px)
+   }
+
+   100% {
+      transform: translateX(0)
+   }
 }
 
-#headerImageCont img { 
+#headerImageCont img {
    width: 98%;
    opacity: 0;
    transition: 500ms opacity;
 
 }
+
 .colorPillar {
    opacity: 0;
    transition: 500ms opacity;
@@ -310,7 +319,8 @@ header article p {
    width: 1px;
    height: 70dvh;
 }
-.arrive { 
+
+.arrive {
    opacity: 1 !important;
    animation: silly 1s;
 }
