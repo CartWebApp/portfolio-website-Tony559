@@ -1,68 +1,305 @@
- body { 
-    height: fit-content;
- }
- header { 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 95dvh;
- }
- #headerImageCont { 
-    display: flex;
-    flex-direction: column;
-    height: 75%;
-    width: 25%;
- }
- header article { 
-    width: 30%; 
- }
- header article h1 {
-    font-size: 2rem;
- }
- header article p { 
-    font-size: 1.5rem;
- }
- #bottomBit { 
-    display: flex;
-    flex-direction: row;
-    height: fit-content;
-    background-color: blue;
-    width: 100dvw;
- }
-#fadeCodeHolder { 
-    width: 50%;
-    height: 100dvh;
-    display: flex;
-    background-color: green;
+html,
+body {
+   margin: 0;
+   padding: 0;
+   height: fit-content;
+   overflow-x: hidden;
+   position: relative;
+   z-index: 0;
+}
+
+
+
+
+header {
+   position: relative;
+   pointer-events: none;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   height: 95dvh;
 
 }
-#mainSecRight { 
-    height: fit-content;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    flex-direction: column;
+
+#headerImageCont {
+   display: flex;
+   flex-direction: column;
+   height: 75%;
+   width: 25%;
 }
-#mainSecRight article { 
-    width: 50%;
-    height: fit-content;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
+
+#headerImageCont img {
+
+   border-radius: 2rem;
 }
+
+header article {
+   width: 30%;
+   color: #d5e7f2;
+}
+
+header article h1 {
+   font-size: 2rem;
+   color: #d5e7f2;
+}
+
+header article p {
+   font-size: 1.5rem;
+   color: #d5e7f2;
+}
+
+#bottomBit {
+   position: relative;
+   display: flex;
+   flex-direction: row;
+   height: fit-content;
+   /* background-color: blue; */
+   width: 100dvw;
+
+}
+
+#fadeCodeHolder {
+   position: relative;
+   width: 50%;
+   height: 100dvh;
+   display: flex;
+   /* background-color: green; */
+
+
+}
+
+#mainSecRight {
+   color: #d5e7f2;
+   height: fit-content;
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 3rem;
+   flex-direction: column;
+}
+
+#mainSecRight article {
+   color: #d5e7f2;
+   margin-top: 10rem;
+   width: 50%;
+   height: fit-content;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-direction: column;
+   background-color: rgba(62, 78, 100, .35);
+   padding: .5rem 5rem;
+   border-radius: 5rem;
+}
+
+#mainSecRight h2,
+#mainSecRight p {
+   color: #d5e7f2;
+}
+
+#mainSecRight article>div {
+   color: #d5e7f2;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   width: 100%;
+}
+
 #mainSecRight div ul {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    gap: .5rem;
-    list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: flex-start;
+   width: 100%;
+   gap: .5rem;
+   list-style-type: none;
+   flex-wrap: wrap;
 }
 
-.liHTML , .liCSS, .liJS, .liTrello, .liLucidChart, .liPS, .liFigma { 
-    padding: .25rem .75rem;
-    border-radius: 100px;
+.liHTML,
+.liCSS,
+.liJS,
+.liTrello,
+.liLucidChart,
+.liPS,
+.liFigma {
+   padding: .25rem .70rem;
+   border-radius: 100px;
+   box-shadow: 0px 2px black;
+}
+
+.liHTML {
+   background-color: orangered;
+   color: white;
+}
+
+.liCSS {
+   background-color: rgb(51, 104, 165);
+   color: white;
+}
+
+.liJS {
+   background-color: rgb(201, 204, 8);
+   color: rgb(0, 0, 0);
+}
+
+.liTrello {
+   background-color: rgb(13, 88, 185);
+   color: white;
+}
+
+.liLucidChart {
+   background-color: rgb(165, 50, 8);
+   color: white;
+}
+
+.liPS {
+   background-color: rgb(12, 137, 240);
+   color: white;
+}
+
+.liFigma {
+   background-color: rgb(197, 56, 21);
+   color: white;
+}
+
+#mainSecRight article div a {
+   background-color: #a9c6d9;
+   padding: .4rem 1rem;
+   border-radius: 40px;
+   box-shadow: 0px 2px black;
+   color: black;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   align-self: flex-end;
+   margin-top: 1rem;
+   width: fit-content;
+}
+
+#fadeCodeHolder img {
+   width: 90%;
+   height: 70%;
+   opacity: .25;
+}
+
+#fadeCodeHolder {
+   margin-top: 10rem;
+   margin-left: 12rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+#fadeCodeHolder img:nth-of-type(2) {
+   width: 100%;
+   height: 30%;
+   margin-left: 10rem;
+}
+
+
+
+
+
+#cards {
+   margin-top: 5rem;
+   display: flex;
+   flex-wrap: wrap;
+   gap: .3rem;
+   max-width: 500px;
+   width: calc(100% - 20px);
+}
+
+#cards:hover>.card::after {
+   opacity: 1;
+}
+
+.card {
+   background-color: rgba(255, 255, 255, 0.1);
+   border-radius: 10px;
+   cursor: pointer;
+   display: flex;
+   height: 200px;
+   flex-direction: column;
+   position: relative;
+   width: 200px;
+}
+
+.card:hover::before {
+   opacity: 1;
+}
+
+.card::before,
+.card::after {
+   border-radius: inherit;
+   content: "";
+   height: 100%;
+   left: 0px;
+   opacity: 0;
+   position: absolute;
+   top: 0px;
+   transition: opacity 500ms;
+   width: 100%;
+}
+
+.card::before {
+   background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),
+         rgba(255, 255, 255, 0.06),
+         transparent 40%);
+   z-index: 3;
+}
+
+.card::after {
+   background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+         rgba(255, 255, 255, 0.4),
+         transparent 40%);
+   z-index: 1;
+}
+
+.card>.card-content {
+   background-color: #021132;
+   border-radius: inherit;
+   display: flex;
+   flex-direction: column;
+   flex-grow: 1;
+   inset: 1px;
+   padding: 10px;
+   position: absolute;
+   z-index: 2;
+}
+#headerImageCont { 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+
+
+}
+
+@keyframes silly {
+   0% {transform: translateX(-300px)}
+   100% { transform: translateX(0)}
+}
+#headerImageCont img { 
+   width: 98%;
+   opacity: 0;
+   transition: 500ms opacity;
+
+}
+.colorPillar {
+
+   background: linear-gradient(transparent, rgb(0, 213, 255), transparent);
+   width: 1px;
+   height: 70dvh;
+}
+.arrive { 
+   opacity: 1 !important;
+   animation: silly 1s;
 }

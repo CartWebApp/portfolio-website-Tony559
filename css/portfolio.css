@@ -2,16 +2,61 @@
     color: white;
 }
 
-body { 
+body {
     height: 100dvh;
     width: 100dvw;
     background-color: #010d26;
     margin: 0;
     overflow-x: hidden;
+    padding: 0;
+}
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+header,
+#bottomBit,
+#mainSecRight {
+    pointer-events: none;
+}
+
+header *,
+#bottomBit *,
+#mainSecRight * {
+    pointer-events: auto;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header,
+#bottomBit,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+
+
+header {
+    margin-top: 5dvh;
 }
 
 #topNav {
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +64,10 @@ body {
     height: 5dvh;
     align-items: center;
     background: linear-gradient(to bottom, #0b344d, transparent);
+    z-index: 10000;
 }
-#navSecLeft { 
+
+#navSecLeft {
     width: 30%;
     height: 100%;
     display: flex;
@@ -28,7 +75,8 @@ body {
     align-items: center;
     gap: 1rem;
 }
-#navSecLeft #pfp { 
+
+#navSecLeft #pfp {
     margin-left: 3rem;
     width: 30px;
     height: 30px;
@@ -38,9 +86,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 #pfp img {
     border-radius: 100%;
+    height: 30px;
+    width: 30px;
 }
+
 #navSecRight {
     display: flex;
     justify-content: flex-end;
@@ -50,17 +102,19 @@ body {
 
     gap: 2rem;
 }
-#navSecRight a:last-of-type { 
+
+#navSecRight a:last-of-type {
     margin-right: 3rem;
 }
 
-#image-track > img { 
+#image-track>img {
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
     object-position: center;
 
 }
+
 #image-track {
     display: flex;
     gap: 4vmin;
@@ -68,4 +122,56 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(0%, -50%);
+}
+
+footer {
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #03223f;
+    width: 100dvw;
+    height: 20dvh;
+}
+
+footer nav {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 33.33dvw;
+    height: 100%
+}
+
+footer nav a {
+    padding-left: 5rem;
+    text-decoration: none;
+}
+
+.footerLogoSection {
+    width: 33.33dvw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerEmailSection {
+    width: 33.33dvw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footerLogoSection a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerLogoSection img {
+    width: 30%;
 }

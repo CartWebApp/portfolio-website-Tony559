@@ -1,0 +1,28 @@
+body { 
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+header { 
+    height: 90dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header article:first-of-type { 
+    width: 30%;
+}
+h1 {
+    font-size: 2rem;
+}
+header article:first-of-type p {
+    font-size: 1.5rem;
+}
+header div img { 
+    width: 100%;
+}
+header div { 
+    width: 25%;
+}

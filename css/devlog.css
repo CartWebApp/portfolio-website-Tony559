@@ -1,0 +1,46 @@
+header {
+    margin-top: 10rem !important;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+}
+
+tr {
+    display: flex;
+    margin-top: 1rem;
+    gap: 3rem;
+}
+
+tr td {
+    padding: 1rem;
+}
+
+tr td:first-of-type {
+    width: 10%;
+    border: 1px solid white;
+}
+
+tr td:first-of-type::before {
+    content: "Date: ";
+}
+
+tr td:nth-of-type(2) {
+    border: 1px solid white;
+    width: 70%;
+    height: auto;
+}
+
+.tableCont {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

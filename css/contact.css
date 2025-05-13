@@ -1,0 +1,101 @@
+main {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 100dvh;
+}
+main div { 
+    width: 60%;
+}
+main div article { 
+    width: 100%;
+}
+h1 { 
+    width: fit-content;
+    font-size: 2rem;
+}
+main div article {
+    padding: 0;
+    margin: 0;
+}
+article, 
+main div article > div { 
+    width: fit-content;
+}
+main div article div > p { 
+    width: fit-content;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+main div article div:nth-of-type(2) { 
+    width: 50%; 
+    height: fit-content;
+}
+.aiconCont { 
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+.aiconCont li { 
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/* main section {
+    width: 50%;
+}
+section form { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+    height: fit-content; 
+}
+section form input,
+section form select,
+section form textarea {
+    width: 100%;
+    height: fit-content;
+    color: black;
+} */
+
+form { 
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: 1rem;
+}
+input,
+select,
+textarea { 
+    padding: 1.4rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: rgb(23,23,23, .5);
+    border-radius: 10px;
+}
+textarea {
+    height: 6rem;
+}
+button { 
+    width: 8rem;
+    padding: 1.4rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+input:focus,select:focus,textarea:focus { 
+    border: none;
+    outline: none;
+}
+option:not(:first-of-type) {
+  color: black;
+}
